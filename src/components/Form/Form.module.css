@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    object-fit: cover !important;
+}
+.main{
+    width: 100%;
+    height: calc(100vh - 86px);
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    z-index: 2;
+}
+.main::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+form{
+    top: 20px;
+    right: 30px;
+    height: 70vh;
+    padding: 13px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+    position: relative;
+}
+.sign, .fbgoogle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.sign p{
+    font-size: 17px;
+    font-weight: 600;
+}
+.fb, .google{
+    width: 130px;
+    height: 40px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.fb{
+    background-color: blue;
+    margin-right: 20px;
+}
+.google{
+    background-color: red;
+}
+.fb span, .google span{
+    margin-right: 10px;
+}
+form>p{
+    font-size: 13px;
+    color: gray;
+    position: relative;
+    width: 114%;
+    text-align: center;
+}
+form>p::before, form>p::after{
+    content: '';
+    width: 110px;
+    height: 1px;
+    top: 0;
+    position: absolute;
+    background-color: gray;
+    
+}
+form>p::before{
+    left: 0;
+    transform: translate(25px, 8px);
+}
+form>p::after{
+    right: 0;
+    transform: translate(-25px, 8px);
+}
+
+form>input{
+    width: 250px;
+    height: 35px;
+    box-shadow:    -1px 6px 11px 0px rgba(127, 127, 127, 0.75);
+    outline: none;
+    border: none;
+    padding-left: 10px;
+}
+::placeholder{
+    padding-left: 7px;
+}
+.check{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.check p{
+    margin-left: 7px;
+}
+.check span{
+    color: teal;
+}
+form button{
+    width: 250px;
+    height: 35px;
+    background-color: #b39490;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+}
+.error{
+    font-size: 12px;
+    font-style: italic;
+    color: rgb(9, 40, 43);
+}
+input:hover{
+    border:1px solid #0a4246;
+}
+input:focus{
+    background-color: rgb(228, 228, 228);
+}
+ i span{
+    font-size: 13px;
+    color: gray;
+}
+
+@media screen and (max-width: 768px){
+    
+}
+@media screen and (max-width: 425px){
+    .main{
+        height: calc(100vh - 78px);
+    }
+    form{
+        right: 58px;
+    }
+}

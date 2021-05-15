@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Charmonman&display=swap');
+.header {
+    width: 100% ;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 20px 0 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 9;
+}
+.header div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header .icon{
+    width: 15%;
+}
+.header .btn{
+    width: 40%;
+}
+.header div span{
+    margin-right: 5px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+.header .icon span{
+    font-family: 'Charmonman', cursive;
+    cursor: pointer;
+}
+.homeicon{
+    margin-bottom: 7px !important;
+}
+.btn button{
+    color: white !important;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 3px;
+}
+.btn button:hover, .btn a:hover{
+    color: rgb(177, 177, 177) !important;
+}
+.btn{
+    margin-right: 30px;
+}
+.btn a{
+    color: white !important;
+    margin-right: 16px;
+    font-size: 17px;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 768px){
+    .header .icon{
+        margin-left: 15px;
+    }
+}
+@media screen and (max-width: 425px){
+    .header .icon{
+        margin-left: 55px;
+    }
+    .header div span{
+        font-size: 20px;
+    }
+    .btn a{
+        margin-right: 9px;
+        font-size: 14px;
+    }
+    .btn button{
+        font-size: 13px;
+    }
+    .header .btn{
+        width: 50%;
+    }
+}

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+.category{
+    width: 100%;
+    text-align: center;
+    margin: 100px 0 40px 0;
+}
+.category p{
+    font-size: 34px;
+    font-family: 'Eagle Lake', cursive;
+    margin-bottom: 10px;
+}
+.category .photo{
+    width: 120px;
+    position: relative;
+}
+.category div{
+    position: relative;
+}
+.category div::after,
+.category div::before{
+    content: '';
+    width: 43%;
+    height: 2px;
+    top: 22px;
+    position: absolute;
+    background-color: rgb(56, 56, 56);
+}
+.category div::after{
+    right: 0;
+}
+.category div::before{
+    left: 0;
+}
+
+@media screen and (max-width: 768px){
+    .category p{
+        font-size: 30px;
+    }
+    .category .photo{
+        width: 100px;
+    }
+    .category div::after,
+    .category div::before{
+    width: 42%;
+    }
+    .category{
+        margin: 60px 0 20px 0;
+    }
+}
+@media screen and (max-width: 425px){
+    .category p{
+        font-size: 24px;
+    }
+    .category .photo{
+        width: 75px;
+    }
+    .category div::after,
+    .category div::before{
+        width: 39%;
+        top: 14px;
+    }
+    .category{
+        margin: 30px 0 10px 0;
+    }
+}
